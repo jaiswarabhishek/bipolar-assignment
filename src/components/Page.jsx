@@ -328,7 +328,7 @@ function Page() {
               </Button>
             </div>
 
-            <Typography sx={{ marginBottom: "12px" }}>
+            <Typography sx={{ marginBottom: "5px" }}>
               <span
                 style={{ fontWeight: "600", color: "#222", fontSize: "14px" }}
               >
@@ -347,7 +347,7 @@ function Page() {
               </span>
             </Typography>
 
-            <Typography sx={{ marginBottom: "12px" }}>
+            <Typography sx={{ marginBottom: "5px" }}>
               <span
                 style={{ fontWeight: "600", color: "#222", fontSize: "14px" }}
               >
@@ -366,7 +366,7 @@ function Page() {
               </span>
             </Typography>
 
-            <Typography sx={{ marginBottom: "12px" }}>
+            <Typography sx={{ marginBottom: "5px" }}>
               <span
                 style={{ fontWeight: "600", color: "#222", fontSize: "14px" }}
               >
@@ -384,7 +384,7 @@ function Page() {
               </span>
             </Typography>
 
-            <Typography sx={{ marginBottom: "12px" }}>
+            <Typography sx={{ marginBottom: "5px" }}>
               <span
                 style={{ fontWeight: "600", color: "#222", fontSize: "14px" }}
               >
@@ -403,7 +403,7 @@ function Page() {
               </span>
             </Typography>
 
-            <Typography sx={{ marginBottom: "24px" }}>
+            <Typography sx={{ marginBottom: "19px" }}>
               <span
                 style={{ fontWeight: "600", color: "#222", fontSize: "14px" }}
               >
