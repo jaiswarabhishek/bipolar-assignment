@@ -14,37 +14,12 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MenuItem from '@mui/material/MenuItem';
 
-const currencies = [
-  {
-    value: 'USD',
-    label: '$',
-  },
-  {
-    value: 'EUR',
-    label: '€',
-  },
-  {
-    value: 'BTC',
-    label: '฿',
-  },
-  {
-    value: 'JPY',
-    label: '¥',
-  },
-];
 
 
 const defaultTheme = createTheme();
 
 export default function Forms() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
+  
 
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -60,7 +35,7 @@ export default function Forms() {
             padding: '30px 42px 60px 42px',
             boxShadow: '0 0 10px rgba(0,0,0,0.5)',
             borderRadius: '16px',
-            width:'40%',
+            width:'fit-content',
             marginLeft:'auto',
             marginRight:'auto',
           }}
@@ -72,7 +47,7 @@ export default function Forms() {
             <Typography sx={{marginBottom:'5px',fontSize:'26px',fontWeight:'400'}}>
           Welcome Onboard
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <Box component="form" noValidate sx={{ mt: 1 }}>
            <TextField id="filled-basic"  sx={{width:'100%',marginBottom:'20px',backgroundColor: '#E7E0EC',borderRadius: '4px',}} label="Your Name" variant="filled" />
            <TextField id="filled-basic" sx={{width:'100%',marginBottom:'20px',backgroundColor: '#E7E0EC',borderRadius: '4px',}} label="Company Name" variant="filled" />
            <TextField
@@ -102,7 +77,8 @@ export default function Forms() {
                 display: 'flex',
                 justifyContent: 'space-between',
                 marginTop: '10px',
-                width: '85%',
+                width: 'fit-content',
+                gap: '10px'
             }}
             >
                 <Box
@@ -144,7 +120,6 @@ export default function Forms() {
             </div>
             
             <Button
-              type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 , backgroundColor:'#333333',borderRadius:'8px' ,padding: '10px 40px'}}

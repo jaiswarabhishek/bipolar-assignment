@@ -1,4 +1,4 @@
-// import '../src/index.css'
+import '../src/styles/globals.css';
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
@@ -6,7 +6,7 @@ const preview = {
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/i,
+        date: /Date$/,
       },
     },
   },
