@@ -48,14 +48,19 @@ export default function Forms() {
           Welcome Onboard
           </Typography>
           <Box component="form" noValidate sx={{ mt: 1 }}>
-           <TextField id="filled-basic"  sx={{width:'100%',marginBottom:'20px',backgroundColor: '#E7E0EC',borderRadius: '4px',}} label="Your Name" variant="filled" />
-           <TextField id="filled-basic" sx={{width:'100%',marginBottom:'20px',backgroundColor: '#E7E0EC',borderRadius: '4px',}} label="Company Name" variant="filled" />
+           <TextField id="name"  sx={{width:'100%',marginBottom:'20px',backgroundColor: '#E7E0EC',borderRadius: '4px',}} label="Your Name" variant="filled" 
+            data-testid="name"
+           />
+           <TextField id="comp_name" sx={{width:'100%',marginBottom:'20px',backgroundColor: '#E7E0EC',borderRadius: '4px',}} label="Company Name" variant="filled"
+            data-testid="comp_name"
+           />
            <TextField
-          id="filled-select-currency"
+          id="select_industry"
           select
           variant="filled"
           label='Select Industry'
           sx={{width:'100%',backgroundColor: '#E7E0EC',borderRadius: '4px',}}
+          data-testid="select_industry"
          />
           
         
@@ -121,6 +126,7 @@ export default function Forms() {
             
             <Button
               fullWidth
+              role='button'
               variant="contained"
               sx={{ mt: 3, mb: 2 , backgroundColor:'#333333',borderRadius:'8px' ,padding: '10px 40px'}}
             >
