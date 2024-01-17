@@ -3,7 +3,8 @@ import Page from "../components/Page"
 
 export default {
     component: Page,
-     tags: ['autodocs'],
+    title: 'Components/Page',
+    tags: ['autodocs'],
 };
 
 
@@ -17,3 +18,4 @@ export const Default={
     lastUpdate: "Aug 03, 2023 12:01:42 PM",
     }
 }
+

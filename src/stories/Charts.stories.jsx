@@ -2,6 +2,7 @@ import Charts from "@/components/Charts";
 
 export default {
     component: Charts,
+    title: 'Components/Charts',
     tags: ['autodocs'],
 };
 

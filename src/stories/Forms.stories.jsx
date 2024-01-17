@@ -6,6 +6,7 @@ import { expect } from '@storybook/jest';
 
 export default {
   component: Forms,
+  title: 'Components/Forms',
 };
 
 export const EmptyForm = {};
