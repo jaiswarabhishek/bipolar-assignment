@@ -4,9 +4,11 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <Head>
-      <title>Page - Component</title>
+    <>
+      <Head>
+        <title>Home - Page</title>
+      </Head>
       <Page />
-    </Head>
+    </>
   );
 }

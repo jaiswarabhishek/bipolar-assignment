@@ -6,10 +6,12 @@ import Head from 'next/head'
 export default function Home() {
 
     return (
-        <Head>
-            <title>Cards - Component</title>
+        <>
+            <Head>
+                <title>Cards - Component</title>
+            </Head>
             <Cards />
-        </Head>
+        </>
     )
 }
 
